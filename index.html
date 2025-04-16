@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adeel Iqbal - UI/UX Designer</title>
+  <style>
+    :root {
+      --bg-color: linear-gradient(135deg, #1e3c72, #2a5298);
+      --text-color: white;
+      --card-bg: rgba(255, 255, 255, 0.1);
+    }body.dark {
+  --bg-color: linear-gradient(135deg, #000000, #434343);
+  --text-color: #f0f0f0;
+  --card-bg: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  animation: fadeIn 2s ease-in;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+header {
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+  animation: slideInDown 1s ease-in-out;
+}
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+p {
+  margin: 0.3rem 0;
+}
+section {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  animation: slideInUp 1.5s ease-in-out;
+}
+.card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+h2 {
+  margin-top: 0;
+}
+.buttons {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.buttons button, .buttons a {
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #ffffff20;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.social-links a {
+  margin: 0 10px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes slideInDown {
+  from {transform: translateY(-100px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+@keyframes slideInUp {
+  from {transform: translateY(100px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adeel Iqbal</h1>
+    <p>UI/UX Designer</p>
+    <p>Phone: 03416363205 | Email: malikadeeliqbal512@gmail.com</p>
+    <div class="social-links">
+      <a href="https://github.com/adeeliqbal" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/adeeliqbal" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/adeeliqbal" target="_blank">Twitter</a>
+    </div>
+  </header>
+  <div class="buttons">
+    <button onclick="toggleTheme()">Toggle Light/Dark Mode</button>
+    <a href="resume.pdf" download>Download PDF</a>
+  </div>
+  <section>
+    <div class="card">
+      <h2>Education</h2>
+      <p>Matric</p>
+    </div>
+    <div class="card">
+      <h2>Skills</h2>
+      <p>UI/UX Designing</p>
+    </div>
+    <div class="card">
+      <h2>Project: Financial Market App – UI/UX Case Study</h2>
+      <p><strong>Overview:</strong> Real-time stock prices, personal portfolio, and news – all in one app dashboard.</p>
+      <p><strong>Problem:</strong> Difficult to track live data in a user-friendly interface.</p>
+      <p><strong>Goal:</strong> Create clean, readable UI with live stocks, charts, stats, and news feed.</p>
+      <p><strong>Design Process:</strong></p>
+      <ul>
+        <li>Research: 3 finance apps analyzed</li>
+        <li>Wireframing: Basic sketches</li>
+        <li>UI Design: High-fidelity in Figma</li>
+        <li>Testing: Focused on dark mode, readability</li>
+      </ul>
+      <p><strong>Reflection:</strong> Improved layout, consistency, and UX for finance apps.</p>
+    </div>
+  </section>  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+    }
+  </script></body>
+</html>
